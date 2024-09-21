@@ -1,0 +1,61 @@
+html, body {
+  height: 100%; /* Ensure the body takes up the full viewport height */
+  margin: 0;
+  background-color: rgb(244, 241, 232);
+  justify-content: center;
+  align-items: center;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height for centering */
+}
+
+.signup-form, .login-form {
+  background-color: hsl(0, 0%, 95%); /* Optional: Background color for the form */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.signup-form form, .login-form form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Spacing between inputs */
+}
+
+.signup-form input, .login-form  input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%; /* Make the inputs full width */
+}
+
+.signup-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(211, 100%, 50%);
+  color: white;
+  cursor: pointer;
+}
+
+.signup-form button:hover {
+  background-color: hsl(211, 100%, 35%);
+}
+
+.login-form button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: hsl(120, 90%, 36%);
+  color: white;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background-color: hsl(120, 90%, 25%);
+}
