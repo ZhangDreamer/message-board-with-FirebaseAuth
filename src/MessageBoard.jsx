@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import './MessageBoard.css';
 
 function MessageBoard(){
 
@@ -15,11 +16,14 @@ function MessageBoard(){
 
 
   return(
-    <div>
-      <input className="input-field" placeholder="Input your message!" onChange={handleInputChange}/><button onClick={handlePostMessage}>Post</button>
+    <div className="message-board">
+      <div clasName="input-container">
+      <input className="input-field" placeholder="Input your message!" onChange={handleInputChange}/>
+      <button className="post-button" onClick={handlePostMessage}>Post</button>
+      </div>
 
       <ul className="board-messages">
-        {messages.map((message, index) => <li key={index}>{message}</li>)}
+        {messages.map((message, index) => <li key={index} className="message-item">{message}</li>)}
       </ul>
     </div>
   )

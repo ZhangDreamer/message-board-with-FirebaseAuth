@@ -1,0 +1,11 @@
+.message-board{
+  display: flex;
+  flex-direction: column;
+  max-width: 800px;
+  margin: 0 auto;
+  justify-content: space-around;
+  align-items: center;
+  padding: 20px;
+  border: 1px solid #333333;
+}
+
